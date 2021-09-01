@@ -1,0 +1,27 @@
+ALGORITHM nb_chaine_de_caractère
+VAR
+ chainedecaractere: STRING;
+ nombredecaractère : INTEGER;
+ i:INTEGER:= 1;
+ point:char:='.';
+BEGIN
+  WHILE (chainedecaractere[i]<>point) DO
+      i:=i+1
+  END_WHILE 
+  nombredecaractère:=i-1 
+END
+
+ALGORITHM nb_voyelles
+VAR
+ text: STRING;
+ nombredecaractère : INTEGER;
+ i,nbr:INTEGER;
+ BEGIN
+ nbr:=0;
+ FOR (i:=0,lenght.(text[])-1)
+ IF text[i]:='a' || text[i]:='e' || text[i]:='i' || text[i]:='o' || text[i]:='y' || text[i]:='u' then
+
+ nbr:= nbr+1
+ END_IF
+ END_FOR
+END
