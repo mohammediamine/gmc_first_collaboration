@@ -1,11 +1,11 @@
 ALGORITHM three_nb_add
 VAR
     a,b,c:INTEGER;
-    sum:INTEGER;
+    s:INTEGER;
 BEGIN
     read(a);
     read(b);
     read(c);
-    sum := a + b+ c;
-    write(sum);
+    s := a + b+ c;
+    write(s);
 END
